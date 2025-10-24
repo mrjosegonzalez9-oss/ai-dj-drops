@@ -1,12 +1,12 @@
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { generateSpeech } from './services/geminiService.ts';
-import { pcmToAudioBuffer, audioBufferToWav } from './utils/audioUtils.ts';
-import { AVAILABLE_VOICES, INITIAL_EFFECT_SETTINGS } from './constants.ts';
-import type { Voice, EffectSettings } from './types.ts';
-import AudioEditor from './components/AudioEditor.tsx';
-import SpinnerIcon from './components/icons/SpinnerIcon.tsx';
-import SpeakerIcon from './components/icons/SpeakerIcon.tsx';
+3,import { generateSpeech } from './services/geminiService.ts';
+4,"import { pcmToAudioBuffer, audioBufferToWav } from './utils/audioUtils.ts';"
+5,"import { AVAILABLE_VOICES, INITIAL_EFFECT_SETTINGS } from './constants.ts';"
+6,"import type { Voice, EffectSettings } from './types.ts';"
+7,import AudioEditor from './components/AudioEditor.tsx';
+8,import SpinnerIcon from './components/icons/SpinnerIcon.tsx';
+9,import SpeakerIcon from './components/icons/SpeakerIcon.tsx';
 const App: React.FC = () => {
   const [djName, setDjName] = useState<string>('Sonido Fantasma');
   const [selectedVoice, setSelectedVoice] = useState<Voice>(AVAILABLE_VOICES[0]);
