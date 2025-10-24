@@ -1,9 +1,9 @@
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { generateSpeech } from './services/geminiService';
-import { pcmToAudioBuffer, audioBufferToWav } from './utils/audioUtils';
+import { generateSpeech } from './services/geminiService.ts';
+import { pcmToAudioBuffer, audioBufferToWav } from './utils/audioUtils.ts';
 import { AVAILABLE_VOICES, INITIAL_EFFECT_SETTINGS } from './constants';
-import type { Voice, EffectSettings } from './types';
+import type { Voice, EffectSettings } from './types.ts';
 import { AudioEditor } from './components/AudioEditor';
 import { SpinnerIcon } from './components/icons/SpinnerIcon';
 import { SpeakerIcon } from './components/icons/SpeakerIcon';
